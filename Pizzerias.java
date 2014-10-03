@@ -3,7 +3,7 @@
  * Licensed under the Academic Free License version 3.0
  * http://opensource.org/licenses/AFL-3.0
  * 
- * Authors: Stephanie Olson
+ * Authors: Stephanie Olson & Tetis Chang
  */
 
 package PizzaPoacher.gae.db;
@@ -27,12 +27,16 @@ import com.google.appengine.api.datastore.Transaction;
 
 public final class Pizzerias
 
-//QUERY PIZZERIAS  <--> User story B task
+//ADD PIZZA <--> User story A task
 
-//GET PIZZERIA 
+//DELETE PIZZA  <--> User story A task
 
-//ADD PIZZERIA ** AddPizzeriaServlet.java
+//QUERY PIZZERIAS  <--> User story A task?
 
-//UPDATE PIZZERIA ** UpdatePizzeriaSerlvet.java
+//GET PIZZERIA  <--> User story A task?
 
-//DELETE PIZZERIA ** DeletePizzeriaServlet.java
+//ADD PIZZERIA  <--> User story C task** AddPizzeriaServlet.java written
+
+//UPDATE PIZZERIA <--> User story C task** UpdatePizzeriaSerlvet.java written
+
+//DELETE PIZZERIA  <--> User story C task** DeletePizzeriaServlet.java written
