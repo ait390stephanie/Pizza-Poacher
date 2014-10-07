@@ -14,14 +14,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import PizzaPoacher.gae.db.Pizzerias;
+import PizzaPoacher.gae.db.Driver;
 
 @SuppressWarnings("serial")
 public class DeletePizzaServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		boolean result=Pizzerias.deletePizzaCommand(req.getParameter("pizzaID")); //"pizzaID assuming that each pizza ordered will be given an identification num"
+		boolean result=Driver.deletePizzaCommand(req.getParameter("pizzaID")); //"pizzaID assuming that each pizza ordered will be given an identification num"
 		resp.setStatus((result)?HttpServletResponse.SC_OK:HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 	}
 }
