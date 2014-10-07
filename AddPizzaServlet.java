@@ -15,7 +15,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import PizzaPoacher.gae.db.Pizzerias;
+import PizzaPoacher.gae.db.Driver;
 
 @SuppressWarnings("serial")
 public class AddPizzaServlet extends HttpServlet {
@@ -24,5 +24,5 @@ public class AddPizzaServlet extends HttpServlet {
 		String pizzaSize = req.getParameter("Size");
 		String pizzaTopping = req.getParameter("Topping");
 		String pizzaType = req.getParameter("Pizza Type")
-		Pizzerias.createOrder(orderID);
+		Driver.createOrder(orderID);
 		resp.sendRedirect("/gae/admin/outputOrder.jsp"); //output order == redirect .jsp
